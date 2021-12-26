@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cubing"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Cubing" Height="450" Width="800">
     <Grid Background="AliceBlue">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -25,11 +25,11 @@
             </Grid.ColumnDefinitions>
             <StackPanel Orientation="Horizontal"  Grid.Row="0" Grid.Column="0" Margin="4">
                 <TextBox x:Name="textboxDimension" Text="5" Width="100" Margin="4" />
-                <Button x:Name="btnCreateByDimension" Content="New" Width="80" Margin="4" Click="btnCreateByDimension_Click" />
-                <Button x:Name="btnRandom" Content="Random" Width="80" Margin="4" Click="btnRandom_Click"/>
-                <TextBox x:Name="textboxDepth" Width="40" Margin="10,4" Text=""/>
-                <Button x:Name="btnGetSolution" Content="GetSolution" Width="100" Margin="4" Click="btnGetSolution_Click"/>
-                <Button x:Name="btnDemo" Content="Demo" Width="80" Margin="10,4" Click="btnDemo_Click"/>
+                <Button x:Name="btnCreateByDimension" Content="New" Width="80" Margin="10,4" Click="btnCreateByDimension_Click" />
+                <Button x:Name="btnRandom" Content="Random" Width="80" Margin="10,4" Click="btnRandom_Click"/>
+                <!--<TextBox x:Name="textboxDepth" Width="40" Margin="10,4" Text=""/>-->
+                <Button x:Name="btnGetSolution" Content="GetSolution" Width="100" Margin="10,4" Click="btnGetSolution_Click"/>
+                <Button x:Name="btnDemo" Content="Demo" Width="80" Margin="40,4" Click="btnDemo_Click"/>
             </StackPanel>
             <TextBox x:Name="textboxCubeString" Text=""  Margin="4" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
             <Button x:Name="btnCreateByCubeString" Content="Create" Width="80" Margin="4" Click="btnCreateByCubeString_Click"  Grid.Row="1" Grid.Column="2"/>
